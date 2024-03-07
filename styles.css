@@ -1,0 +1,23 @@
+.turn {
+  transform: rotate(-90deg);
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+
+.toss {
+  transform: translateY(calc(-100% / 3)) scale(calc(sqrt(2) / 2)) rotate(-45deg);
+}
+
+* {
+  transition: transform 500ms;
+}
+
+body > * {
+  position: absolute;
+}
+
+/* body:not(:hover) * {
+  transform: none;
+} */
